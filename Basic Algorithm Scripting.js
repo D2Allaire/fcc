@@ -165,9 +165,9 @@ truncateString("A-tisket a-tasket A green and yellow basket", 11);
 function chunkArrayInGroups(arr, size) {
     var slicedArray = [];
     var step = 0;
-    for (var i=0; i<arr.length/size; i++) {
-        if (arr.length > step+size) {
-            slicedArray[i] = arr.slice(step, step+size);
+    for (var i = 0; i < arr.length / size; i++) {
+        if (arr.length > step + size) {
+            slicedArray[i] = arr.slice(step, step + size);
             step += size;
         } else {
             slicedArray[i] = arr.slice(step);
@@ -202,8 +202,8 @@ slasher(["a", "b", "c"], 2); // -> ["c"]
 
 function mutation(arr) {
     var letters = arr[1].toLowerCase().split('');
-    for (var i=0; i<letters.length; i++) {
-        if (arr[0].toLowerCase().indexOf(letters[i]) < 0 ) {
+    for (var i = 0; i < letters.length; i++) {
+        if (arr[0].toLowerCase().indexOf(letters[i]) < 0) {
             return false;
         }
     }
@@ -235,6 +235,7 @@ bouncer([7, "ate", "", false, 9]); // -> [7, "ate", 9]
 function destroyer(arr) {
     var args = Array.prototype.slice.call(arguments);
     args = args.slice(1);
+
     function destroy(value) {
         if (args.indexOf(value) >= 0) return false;
         else return true;
@@ -250,10 +251,10 @@ destroyer([1, 2, 3, 1, 2, 3], 2, 3); // -> [1, 1]
  */
 
 function getIndexToIns(arr, num) {
-    arr = arr.sort(function (a, b) {
+    arr = arr.sort(function(a, b) {
         return a - b;
     });
-    for (var i=0; i<arr.length; i++) {
+    for (var i = 0; i < arr.length; i++) {
         if (num <= arr[i]) return i;
     }
     return arr.length;
@@ -268,7 +269,7 @@ getIndexToIns([40, 60], 50); // -> 1
 
 function rot13(str) {
     var codes = [];
-    for (var i=0; i<str.length; i++) {
+    for (var i = 0; i < str.length; i++) {
         var code = str[i].charCodeAt();
         if ((code > 77 && code < 91) || (code > 109 && code < 123)) {
             codes[i] = code - 13;
