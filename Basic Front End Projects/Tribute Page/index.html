@@ -11,43 +11,43 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.1.0/milligram.min.css">
+  <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
-  <p>The base type is 1.6rem (16px) over 1.6 line height (24px)</p>
+  <div class="container">
+    <h1>Leonhard Euler</h1>
+    <p class="subtitle"><em>One of the greatest mathematicians of all time</em></p>
 
-  <!-- Other elements to text markup -->
-  <a>Anchor</a>
-  <em>Emphasis</em>
-  <small>Small</small>
-  <strong>Strong</strong>
-  <u>Underline</u>
+    <figure>
+      <img src="euler.png" alt="Leonhard Euler Portrait">
+      <figcaption>Portrait by Jakob Emanuel Handmann (1753)</figcaption>
+    </figure>
+    
+    <hr>
+    
+    <p>Leonhard Euler (15 April 1707 – 18 September 1783) was a Swiss mathematician, physicist, astronomer, logician and engineer who made important and influential discoveries in many branches of mathematics like infinitesimal calculus and graph theory while also making pioneering contributions to several branches such as topology and analytic number theory.</p>
+    
+    <ul>
+      <li><strong>April 15, 1707: </strong>Born in Basel, Switzerland.</li>
+      <li><strong>1720: </strong>At age 13, he enrolls at the University of Basel, where he obtains a Master of Philosophy in 1723.</li>
+      <li><strong>1727: </strong>By recommendation of the Bernoulli family, who early on discovered his talents for mathematics, Euler accepts a position in the mathematics department of the Imperial Russian Academy of Sciences in Saint Petersburg.</li>
+      <li><strong>1731: </strong>Euler quickly rises through the ranks, and is made professor of physics. Two years later, he succeeds Daniel Bernoulli as the head of mathematics department.</li>
+      <li><strong>June 19, 1741: </strong>Euler takes up a post at the Berlin Academy, where he lives for the subsequent twenty-five years and writes a big part of his publications.</li>
+      <li><strong>1766: </strong>Even after being rendered almost completely blind due to a cataract, Euler keeps producing mathematical papers, and his productivity actually seems to increase. He accepts an invitation to return to the St. Petersburg Academy the same year, being offered great conditions such as a high salary and pension for his wife.</li>
+      <li><strong>1771: </strong>A fire destroys his home, and merely two years later his wife Katharina passes away.</li>
+      <li><strong>September 18, 1783: </strong>Euler suffers from a brain hemorrhage while discussing the newly discovered planet Uranus with a fellow academician, and dies a few hours later.</li>  
+    </ul>
+    
+    <blockquote>
+      <p>Read Euler, read Euler, he is the master of us all.</p>
+      <footer><cite>Pierre-Simon Laplace, mathematician and physicist</cite></footer>
+      </blockquote>
+    
+    <p>To follow Laplace's advice and find out more about Euler and his works, check out his <a href="https://en.wikipedia.org/wiki/Leonhard_Euler">Wikipedia entry</a>.</p>
 
-  <!-- Default Headings -->
-  <h1>Heading</h1>
-  <h2>Heading</h2>
-  <h3>Heading</h3>
-  <h4>Heading</h4>
-  <h5>Heading</h5>
-  <h6>Heading</h6>
+  </div>
 
-  <form>
-    <fieldset>
-      <label for="nameField">Name</label>
-      <input type="text" placeholder="CJ Patoilo" id="nameField">
-      <label for="commentField">Comment</label>
-      <textarea placeholder="Hi CJ …" id="commentField"></textarea>
-      <select>
-      <option>Option 1</option>
-      <option>Option 2</option>
-      </select>
-      <div class="example-send-yourself-copy">
-        <input type="checkbox" id="confirmField">
-        <label class="label-inline" for="confirmField">Send a copy to yourself</label>
-      </div>
-      <input class="button-primary" type="submit" value="Send">
-    </fieldset>
-  </form>
 </body>
 
 </html>

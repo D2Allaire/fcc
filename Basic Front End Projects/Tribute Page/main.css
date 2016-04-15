@@ -1,0 +1,55 @@
+body {
+    background-image: url('smbg.png');
+    background-repeat: repeat;
+}
+
+div.container {
+    width: 90%;
+    max-width: 800px;
+    margin-top: 5rem;
+    text-align: center;
+}
+
+h1, p.subtitle {
+    text-align: center;
+}
+
+li, p, blockquote > p, footer {
+    text-align: left;
+}
+
+h1 {
+    margin: 0 auto 10px auto;
+    padding: 2px 10px;
+    background-color: darkslategrey;
+    color: aliceblue;
+    display: inline-block;
+    -webkit-transform: rotate(1deg);
+	-moz-transform: rotate(1deg);
+	-ms-transform: rotate(1deg);
+	-o-transform: rotate(1deg);
+	transform: rotate(1deg);
+}
+
+img {
+    height: 400px;
+    border-radius: 50%;
+}
+
+figure {
+    margin: 0 auto;
+    display: table;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 1.4rem;
+    font-style: italic;
+    margin-top: 4px;
+}
+
+hr {
+    background-color: goldenrod;
+    width: 50%;
+    height: 1px;
+}
